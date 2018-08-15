@@ -1,0 +1,200 @@
+/* pages/test1/test1.wxss */
+page{
+font-family: '微软雅黑';
+}
+
+.search{
+  display: flex;
+  padding: 4px;
+}
+.search input{
+  padding-left: 0px;
+}
+.s-left{
+  flex: 2;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+  background: #e8e8e8;
+  align-items: center;
+  border-radius: 6px;
+  padding: 3px;
+}
+.s-right{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.s-left icon{
+  /* position: absolute;
+  top:9px;
+  left: 8px;
+  z-index:999; */
+}
+.timer_text{
+  font-size: 11px;
+  color: #a7a7a7;
+}
+.down_text{
+  font-size: 11px;
+  color: #a7a7a7;
+}
+.timer_img{
+  width: 20px;
+  height: 20px;
+}
+.down_img{
+  width: 20px;
+  height: 20px;
+}
+.down{
+  text-align: center;
+}
+/*导航栏  */
+.nav{
+  display: flex;
+  justify-content: space-around; 
+  padding: 0 0 10px 0;
+}
+.nav view{
+  flex: 1;
+  text-align: center;
+}
+.active{
+  color: #09dfab;
+  border-bottom: 2px solid #dab572;
+}
+.content image{
+  width: 100%;
+}
+/*分类  */
+.cate{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 6px;
+  
+}
+.cate image{
+  width: 30px;
+  height: 30px;
+}
+.cate_img{
+  text-align: center;
+}
+.cate_title{
+  text-align: center;
+  padding-bottom: 8px;
+}
+.item{
+  width:22%;
+}
+/*歌曲列表  */
+.song{
+ border-top: 5px solid #e8e8e8;
+ /* border-bottom: 5px solid #e8e8e8; */
+}
+
+.song-title{
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  color: #ccc;
+}
+
+.song-title image{
+  width: 20px;
+  height: 20px;
+}
+
+.song-left{
+ padding-top: 5px;
+ padding-left: 6px;
+ flex: 2;
+}
+
+.song-right{
+  flex: 6;
+}
+
+.song-left image{
+  width: 80px;
+  height: 80px;
+}
+
+.song-item{
+  display: flex;
+  width: 100%;
+}
+.star{
+  display: flex;
+  padding: 10px 0;
+}
+.star image{
+  width: 15px;
+  height: 15px;
+}
+.song-info{
+  display: flex;
+  justify-content: space-between;
+}
+.face image{
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+}
+.del image{
+  width: 22px;
+  height: 22px;
+}
+.title-face{
+  display: flex;
+}
+.album{
+  font-size: 14px;
+  color: #a7a7a7;
+  padding-left: 6px;
+}
+.song-right{
+  padding-left: 8px;
+}
+/*播放器  */
+.player{
+   display: flex;
+   background-color: #dab572;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 10px;
+}
+.p-left{
+  display: flex;
+  font-size: 14px;
+}
+.p-player image{
+  width: 24px;
+  height: 24px;
+  border-radius: 18px;
+}
+.p-player{
+  padding-top: 10px;
+}
+.p-info{
+  padding-left: 3px;
+}
+.p-title{
+  color: #e8e8e8;
+}
+.p-right{
+  display: flex;
+}
+.p-right image{
+ width: 30px;
+ height: 30px;
+}
+.p-start{
+  padding-right: 5px;
+}

@@ -1,0 +1,170 @@
+<!--index.wxml-->
+<view class="root-m">
+  <view class='search'>
+    <view class='search-left'>
+      <icon type="search"  size='20' color="#ccc"/>
+      <input placeholder='影子爱人' type='text'></input>
+    </view>
+    <view class='search-right'>
+      <view class='clock'>
+        <view class='clock-img'><icon color='#e8e8e8' type='waiting' size='22'></icon></view>
+        <view class='clock-text'>定时</view>
+      </view>
+      <view class='down'>
+        <view class='down-img'><icon color='#e8e8e8' type='download' size='22'></icon></view>
+        <view class='down-text'>下载</view>
+      </view>
+    </view>
+  </view>
+  <!--导航  -->
+  <view class='nav'>
+    <view>
+      <text class='active'>推荐</text>
+    </view>
+    <view>
+      <text>精选</text>
+    </view>
+    <view>
+      <text>分类</text>
+    </view>
+    <view>
+       <text>广播</text>
+    </view>
+    <view>
+       <text>我的</text>
+    </view>
+  </view>
+  <!--内容  -->
+  <view class='content'>
+  <!--滑块  -->
+    <view class='swip'>
+      <swiper autoplay circular vertical interval='3000' indicator-dots indicator-color='#fff' indicator-active-color='#ecb171'>
+        <swiper-item><image src='/images/t1.png' class='slide-image'/></swiper-item>
+        <swiper-item><image src='/images/t2.png' class='slide-image'/></swiper-item>
+        <swiper-item><image src='/images/t3.png' class='slide-image'/></swiper-item>
+        <swiper-item><image src='/images/t4.png' class='slide-image'/></swiper-item>
+      </swiper>
+    </view>
+    <!--分类  -->
+    <view class='cate'>
+      <view class='item'>
+        <view class='cate-img'><image src='/images/book.png' /></view>
+        <view class='cate-title'>小说</view>
+      </view>
+       <view class='item'>
+        <view class='cate-img'><image src='/images/love.png' /></view>
+        <view class='cate-title'>情感</view>
+      </view>
+       <view class='item'>
+        <view class='cate-img'><image src='/images/music.png' /></view>
+        <view class='cate-title'>音乐</view>
+      </view>
+       <view class='item'>
+        <view class='cate-img'><image src='/images/knowledge.png' /></view>
+        <view class='cate-title'>知识</view>
+      </view>
+       <view class='item'>
+        <view class='cate-img'><image src='/images/liveradio.png' /></view>
+        <view class='cate-title'>直播</view>
+      </view>
+       <view class='item'>
+        <view class='cate-img'><image src='/images/list.png' /></view>
+        <view class='cate-title'>榜单</view>
+      </view>
+       <view class='item'>
+        <view class='cate-img'><image src='/images/run.png' /></view>
+        <view class='cate-title'>跑步</view>
+      </view>
+       <view class='item'>
+        <view class='cate-img'><image src='/images/sst.png' /></view>
+        <view class='cate-title'>随身听</view>
+      </view>
+    </view>
+  </view>
+  <view class='song'>
+      <view class='song-title'>
+        <view><text>本次为您推荐了两条内容</text></view>
+        <view><image src='/images/refurbish.png'></image></view>
+      </view>
+      <view class='song-list'>
+         <scroll-view scroll-y style='height:130px;'>
+          <view class='song-item'>
+            <view class='song-left'>
+              <image src='/images/gqhb.png'></image>
+            </view>
+            <view class='song-right'>
+              <text>陪你上下班一起听歌</text>
+              <view class='star'>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+              </view>
+              <view class='song-info'>
+                <view class='title-face'>
+                  <view class='face'><image  src='/images/gs2.jpg'></image></view>
+                  <view class='album'><text>邂逅陈先生</text></view>
+                </view>
+                  <view class='del'><image  src='/images/del.png'></image></view>
+              </view>
+            </view>
+          </view>
+          <view class='song-item'>
+            <view class='song-left'>
+              <image src='/images/mm.jpg'></image>
+            </view>
+            <view class='song-right'>
+              <text>曹操</text>
+              <view class='star'>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+              </view>
+              <view class='song-info'>
+                <view class='title-face'>
+                  <view class='face'><image  src='/images/gs1.jpg'></image></view>
+                  <view class='album'><text>曹操</text></view>
+                </view>
+                  <view class='del'><image  src='/images/del.png'></image></view>
+              </view>
+            </view>
+          </view>
+               <view class='song-item'>
+            <view class='song-left'>
+              <image src='/images/mn.jpg'></image>
+            </view>
+            <view class='song-right'>
+              <text>甜甜的</text>
+              <view class='star'>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+                <image  src='/images/star.png'></image>
+              </view>
+              <view class='song-info'>
+                <view class='title-face'>
+                  <view class='face'><image  src='/images/gs3.jpg'></image></view>
+                  <view class='album'><text>周杰伦</text></view>
+                </view>
+                  <view class='del'><image  src='/images/del.png'></image></view>
+              </view>
+            </view>
+          </view>
+          </scroll-view>
+      </view>
+  </view>
+  <view class='player'>
+    <view class='p-left'>
+      <view class='p-player'><image  src='/images/gs1.jpg'></image></view>
+      <view class='p-info'>
+       <view class='p-title'><text>敞开心扉听老歌</text></view>
+       <view class='p-control'><text>左右滑动换节目</text></view>
+      </view>
+    </view>
+    <view class='p-right'>
+      <view class='p-start'><image  src='/images/play.png'></image></view>
+      <view class='p-list'><image  src='/images/slist.png'></image></view>
+    </view>
+  </view>
+</view>
